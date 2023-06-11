@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+
+        }
+        #greating{
+            font-family: sans-serif;
+            background-color: skyblue;
+            width: 30%;
+            text-align: center;
+            padding: 20px 2px;
+            box-shadow: 10px 10px 10px 0;
+            border-radius: 10px;
+            border-radius: 20px 1px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="greating">Loading...</h2>
+    <button id="btn">Click</button>
+</body>
+
+<script>
+    
+    let btn = document.querySelector("#btn").addEventListener("click", ()=> {
+        let greating = document.getElementById("greating")
+        greating.innerText = "Radhe Radhe 💖💕💕";
+    })
+    btn()
+</script>
+</html>
